@@ -61,12 +61,12 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Extensions\BitmapExtensions.cs" />
-    <Compile Include="CameraDevice.cs" />
-    <Compile Include="CameraDevicesEnumerator.cs" />
-    <Compile Include="OpenCVQRCodeReader.cs" />
-    <Compile Include="QRCodeReadEventArgs.cs" />
+    <Compile Include="CameraHelpers\CameraDevice.cs" />
+    <Compile Include="CameraHelpers\CameraDevicesEnumerator.cs" />
+    <Compile Include="OpenCvHelpers\OpenCVQRCodeReader.cs" />
+    <Compile Include="OpenCvHelpers\QRCodeReadEventArgs.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="WebcamStreaming.cs" />
+    <Compile Include="OpenCvHelpers\WebcamStreaming.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -150,7 +150,6 @@
   <ItemGroup>
     <Folder Include="Assets\" />
     <Folder Include="DataStructure\" />
-    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
