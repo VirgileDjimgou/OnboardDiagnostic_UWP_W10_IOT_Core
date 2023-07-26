@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{6A706DDC-4625-444E-ADA5-B363D3865D09}</ProjectGuid>
+    <ProjectGuid>{B33D435B-D1AA-47D7-B0AC-3ACBE06B2071}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>WebcamWithOpenCV</RootNamespace>
     <AssemblyName>WebcamWithOpenCV</AssemblyName>
@@ -60,13 +60,13 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Extensions\BitmapExtensions.cs" />
-    <Compile Include="CameraHelpers\CameraDevice.cs" />
-    <Compile Include="CameraHelpers\CameraDevicesEnumerator.cs" />
-    <Compile Include="OpenCvHelpers\OpenCVQRCodeReader.cs" />
-    <Compile Include="OpenCvHelpers\QRCodeReadEventArgs.cs" />
-    <Compile Include="Extensions\StringExtensions.cs" />
-    <Compile Include="OpenCvHelpers\WebcamStreaming.cs" />
+    <Compile Include="BitmapExtensions.cs" />
+    <Compile Include="CameraDevice.cs" />
+    <Compile Include="CameraDevicesEnumerator.cs" />
+    <Compile Include="OpenCVQRCodeReader.cs" />
+    <Compile Include="QRCodeReadEventArgs.cs" />
+    <Compile Include="StringExtensions.cs" />
+    <Compile Include="WebcamStreaming.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -146,10 +146,6 @@
     <PackageReference Include="ZXing.Net">
       <Version>0.16.6</Version>
     </PackageReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\" />
-    <Folder Include="DataStructure\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
