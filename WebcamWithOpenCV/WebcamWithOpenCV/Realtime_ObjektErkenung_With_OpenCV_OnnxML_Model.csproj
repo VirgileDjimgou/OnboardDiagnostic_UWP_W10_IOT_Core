@@ -60,12 +60,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BitmapExtensions.cs" />
+    <Compile Include="Extensions\BitmapExtensions.cs" />
     <Compile Include="CameraDevice.cs" />
     <Compile Include="CameraDevicesEnumerator.cs" />
     <Compile Include="OpenCVQRCodeReader.cs" />
     <Compile Include="QRCodeReadEventArgs.cs" />
-    <Compile Include="StringExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="WebcamStreaming.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -150,6 +150,7 @@
   <ItemGroup>
     <Folder Include="Assets\" />
     <Folder Include="DataStructure\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
